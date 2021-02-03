@@ -4,8 +4,6 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/t0pep0/go-json-schema-generator"
 )
 
 type NestedItem struct {

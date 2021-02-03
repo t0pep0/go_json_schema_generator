@@ -1,4 +1,4 @@
-package generator
+package go_json_schema_generator
 
 import (
 	"testing"

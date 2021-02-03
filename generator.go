@@ -1,6 +1,6 @@
 // Copyright Kozyrev Yury
 // MIT license.
-package generator
+package go_json_schema_generator
 
 import (
 	"encoding/json"
@@ -10,11 +10,11 @@ import (
 	"strings"
 )
 
-//func main() {
+// func main() {
 //	s := &Document{}
 //	s.Read(&domain.Order{})
 //	fmt.Println(s)
-//}
+// }
 
 const DEFAULT_SCHEMA = "http://json-schema.org/schema#"
 
@@ -214,7 +214,7 @@ func (p *property) addStringValidators(tag *reflect.StructTag) {
 	if en != "" {
 		p.Enum = strings.Split(en, "|")
 	}
-	//const
+	// const
 	c := tag.Get("const")
 	if c != "" {
 		p.Const = c
