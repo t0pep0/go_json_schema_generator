@@ -4,7 +4,6 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/tonnerre/golang-pretty"
 	. "gopkg.in/check.v1"
 )
 
